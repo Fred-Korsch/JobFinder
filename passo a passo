@@ -1,0 +1,20 @@
+passo a passo do projeto 03
+
+primeiro passo adicione as gens
+
+gem 'jquery-rails'
+gem 'bootstrap', '~> 4.0.0.beta'
+
+seundo passo renomei o arquivo para poder usar o Says
+
+application.css para application.scss
+
+agora crie o scaffold
+
+rails g scaffold  Job title:string briefing:text  description:text payment:decimal position:string
+
+obs:Emmet Plung do atom
+
+terceiro passo crie duas paginas umas com o nome de overrides e o variables
+
+obs os efeitos do site e feito em no css e ja trago de casa pelo Kapps

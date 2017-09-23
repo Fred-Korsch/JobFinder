@@ -1,0 +1,18 @@
+<p id="notice"><%= notice %></p>
+
+<%= link_to 'Compartilhe uma vaga ', new_job_path, class: "btn btn-primary" %>
+<hr>
+
+<div class="row">
+  <% @jobs.each do |job| %>
+    <div class="col-md-4">
+      <a href="/jobs/<%= job.id %>">
+        <div class="card-job">
+          <h3><%= job.title %></h3>
+          <p><%= job.briefing %></p>
+          <span><strong>R$ <%= job.payment %></strong></span>
+        </div>
+      </a>
+    </div>
+  <% end %>
+</div>
